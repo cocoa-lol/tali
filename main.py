@@ -10,7 +10,6 @@ def home():
 if __name__ == "__main__":
     port = 80
     desc = {'path': '/'}
-    zeroconf.register_service(service)
     print(f"[+] Up!")
     try:
         serve(app, host="0.0.0.0", port=port)
